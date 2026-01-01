@@ -32,5 +32,5 @@ export default function ArtistTopTracks({ artistId }: Props) {
                 ))
             }
         </div >
-    )
+    );
 }
