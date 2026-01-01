@@ -1,0 +1,53 @@
+.themeBtn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   aspect-ratio: 1;
+   background-color: #684f98;
+   border-radius: 50%;
+
+   .themeImage {
+      transition: all 0.1s ease-in-out;
+   }
+
+   &:hover {
+      background-image: linear-gradient(to bottom right, #684f98, #4f3a7a);
+   }
+
+   &:hover .themeImage {
+      transform: rotate(25deg);
+   }
+
+   &:active {
+      background: #573b8f;
+   }
+
+   &:active .themeImage {
+      scale: 0.9;
+   }
+}
+
+//Dark theme
+
+.darkTheme {
+   background-color: #190938;
+   z-index: 1000;
+
+   .themeImage {
+      transform: scaleX(-1);
+   }
+
+   &:hover {
+      background-image: linear-gradient(to bottom right, #190938, #2f1959);
+   }
+
+   &:hover .themeImage {
+      transform: scaleX(-1) rotate(-12deg);
+      filter: drop-shadow(0 0 10px yellow);
+   }
+
+   &:active {
+      background: rgb(19, 7, 46);
+   }
+}
