@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/shared/header/Header";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Providers } from "@/lib/contexts/providers";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 config.autoAddCss = false;
@@ -39,11 +42,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={inter.className}
-      >
-        {children}
+      <body className={inter.className}>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
-    </html>
+    </html >
   );
 }
