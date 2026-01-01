@@ -1,8 +1,8 @@
+import { Providers } from "@/lib/contexts/Providers";
 import "./globals.css";
 import Header from "@/components/shared/header/Header";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { Providers } from "@/lib/contexts/providers";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
