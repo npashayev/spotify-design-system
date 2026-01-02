@@ -5,7 +5,7 @@ import { use } from 'react';
 
 export default function RecommendedAlbumsPage() {
    const { albums } = use(getSeveralAlbums());
-   throw new Error('Not implemented');
+
    return (
       <div>
          <h2 className="text-3xl mb-6 mt-12 font-bold max-md:text-2xl max-sm:text-[16px]">Popular albums recommended</h2>
