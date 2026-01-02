@@ -3,6 +3,11 @@
 This is a **Next.js** project that shows a **Spotify-style design**.  
 It mostly uses **Tailwind CSS** for styling, and **CSS Modules** are used for some components.
 
+## Live Demo
+
+You can view the running project here:  
+[https://spotify-design-system-six.vercel.app/](https://spotify-design-system-six.vercel.app/)
+
 
 ## Data Source
 
