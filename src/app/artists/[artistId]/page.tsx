@@ -11,6 +11,23 @@ interface Props {
     }>;
 };
 
+export async function generateMetadata({ params }: Props) {
+    const { artistId } = await params;
+
+    try {
+        const artist = await getArtist(artistId);
+        return {
+            title: artist.name,
+            description: `${artist.name} is a Spotify artist.`,
+        };
+    } catch {
+        return {
+            title: 'Artist',
+            description: 'Spotify artist page.',
+        };
+    }
+}
+
 export default async function ArtistPage({ params }: Props) {
     const { artistId } = await params;
 
