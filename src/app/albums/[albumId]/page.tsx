@@ -17,6 +17,16 @@ interface Props {
     }>;
 };
 
+export async function generateMetadata({ params }: Props) {
+    const { albumId } = await params;
+    const album = await getAlbum(albumId);
+
+    return {
+        title: album.name,
+        description: `${album.name} by ${album.artists.map(artist => artist.name).join(", ")}`,
+    };
+}
+
 export default async function AlbumPage({ params }: Props) {
     const { albumId } = await params;
 
