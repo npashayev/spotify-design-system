@@ -12,7 +12,9 @@ interface Props {
 
 export default function ArtistAlbums({ params }: Props) {
     const { artistId } = use(params);
+
     const { items } = use(getArtistAlbums(artistId));
+
     return (
         <div className="p-4">
             <h2 className="text-4xl max-sm:text-3xl mt-12 max-sm:mt-6 mb-4 pl-2 font-bold">Albums</h2>

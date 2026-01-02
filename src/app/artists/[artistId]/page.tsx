@@ -13,7 +13,9 @@ interface Props {
 
 export default async function ArtistPage({ params }: Props) {
     const { artistId } = await params;
+
     let artist;
+
     try {
         artist = await getArtist(artistId);
     } catch (err: unknown) {

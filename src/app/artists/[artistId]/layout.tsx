@@ -8,7 +8,7 @@ interface Props {
 
 export default function ArtistLayout({ children, artistalbums }: Props) {
     return (
-        <main>
+        <main className="pb-8">
             {children}
             <Suspense fallback={
                 <Loading>

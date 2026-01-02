@@ -4,7 +4,7 @@ export default function NotFound() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen px-4">
             <div className="text-center max-w-md">
-                <h1 className="text-4xl font-bold text-white mb-4">
+                <h1 className="text-4xl font-bold text-white mb-4 max-sm:text-2xl">
                     Artist Not Found
                 </h1>
 
