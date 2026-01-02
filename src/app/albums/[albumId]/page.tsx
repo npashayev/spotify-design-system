@@ -19,12 +19,19 @@ interface Props {
 
 export async function generateMetadata({ params }: Props) {
     const { albumId } = await params;
-    const album = await getAlbum(albumId);
 
-    return {
-        title: album.name,
-        description: `${album.name} by ${album.artists.map(artist => artist.name).join(", ")}`,
-    };
+    try {
+        const album = await getAlbum(albumId);
+        return {
+            title: album.name,
+            description: `${album.name} by ${album.artists.map(artist => artist.name).join(", ")}`,
+        };
+    } catch {
+        return {
+            title: 'Album',
+            description: 'Spotify album page.',
+        };
+    }
 }
 
 export default async function AlbumPage({ params }: Props) {
