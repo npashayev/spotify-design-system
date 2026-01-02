@@ -13,10 +13,6 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 export const metadata: Metadata = {
   title: "Spotify Design Demo",
   description: "A Spotify design demo built with Next.js and TypeScript.",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
-  ],
   icons: {
     icon: [
       { url: "/favicon.ico" },
