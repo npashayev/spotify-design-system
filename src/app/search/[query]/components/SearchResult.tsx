@@ -32,7 +32,7 @@ export default function SearchResultsClient({ query }: Props) {
                     {
                         tracks && tracks.length > 0
                             ? <div>
-                                <h2 className="text-3xl font-bold mb-3 pl-6 text-theme">Songs</h2>
+                                <h2 className="text-3xl max-sm:text-2xl font-bold mb-3 pl-6 text-theme">Songs</h2>
                                 <div>
                                     {
                                         tracks.map((track, index) => (
@@ -49,7 +49,7 @@ export default function SearchResultsClient({ query }: Props) {
                     {
                         artists && artists.length > 0
                             ? <div className="mt-12">
-                                <h2 className="text-3xl font-bold my-3 pl-6">Artists</h2>
+                                <h2 className="text-3xl max-sm:text-2xl font-bold my-3 pl-6">Artists</h2>
                                 <Grid>
                                     {
                                         artists.map(artist => <ArtistCard key={artist.id} artist={artist} />)
@@ -61,7 +61,7 @@ export default function SearchResultsClient({ query }: Props) {
                     {
                         albums && albums.length > 0
                             ? <div className="my-12">
-                                <h2 className="text-3xl font-bold my-3 pl-6">Albums</h2>
+                                <h2 className="text-3xl max-sm:text-2xl font-bold my-3 pl-6">Albums</h2>
                                 <Grid>
                                     {
                                         albums.map(album => {
