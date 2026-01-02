@@ -18,7 +18,7 @@ export default function FollowButton({ artistId }: Props) {
     };
 
     return (
-        <button onClick={handleClick} className="control-btn rounded-3xl border-2 border-white px-4 py-1">
+        <button onClick={handleClick} className="control-btn rounded-3xl border-2 border:#171717 dark:border-white px-4 py-1">
             {followed ? "Following" : "Follow"}
         </button>
     );
