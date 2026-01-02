@@ -1,7 +1,7 @@
 'use client';
 import { useShuffle } from '@/lib/contexts/ShuffleContext';
-import { faShuffle } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShuffle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { clsx } from 'clsx';
 
 export default function ShuffleButton() {
@@ -16,5 +16,5 @@ export default function ShuffleButton() {
         >
             <FontAwesomeIcon icon={faShuffle} />
         </button>
-    )
+    );
 }

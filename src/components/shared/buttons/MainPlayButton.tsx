@@ -3,8 +3,8 @@
 import { usePlayingSong } from '@/lib/contexts/PlayingSongContext';
 import { useShuffle } from '@/lib/contexts/ShuffleContext';
 import { SpotifyTrack } from '@/types/tracks';
-import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
 
 interface Props {
@@ -39,11 +39,11 @@ export default function MainPlayButton({ songs, className = "h-14" }: Props) {
             });
         }
 
-    }
+    };
 
     return (
         <button onClick={handleClick} className={clsx("control-btn rounded-full aspect-square flex items-center justify-center bg-[#1FD760]", className)}>
             <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} className="text-black h-5" />
         </button>
-    )
+    );
 }

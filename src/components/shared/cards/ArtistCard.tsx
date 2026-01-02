@@ -1,4 +1,4 @@
-import { SpotifyArtist } from "@/types/artists"
+import { SpotifyArtist } from "@/types/artists";
 import Image from "next/image";
 import Link from "next/link";
 import MainPlayButton from "../buttons/MainPlayButton";
@@ -28,5 +28,5 @@ export default function ArtistCard({ artist }: Props) {
             <p className="line-clamp-1 text-gray-500">{type}</p>
             <MainPlayButton className="absolute bottom-22 right-5 h-12 opacity-0 translate-y-3 transition-all duration-200 ease-out group-hover:opacity-100 group-hover:translate-y-0" />
         </Link>
-    )
+    );
 }

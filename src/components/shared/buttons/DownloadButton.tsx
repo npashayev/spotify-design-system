@@ -1,8 +1,8 @@
 'use client';
 
 import { useDownloadedAlbums } from '@/lib/contexts/DownloadedAlbumsContext';
-import { faArrowDown, faCircleArrowDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown, faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
 
 interface Props {

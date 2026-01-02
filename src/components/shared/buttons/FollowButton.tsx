@@ -15,7 +15,7 @@ export default function FollowButton({ artistId }: Props) {
         } else {
             follow(artistId);
         }
-    }
+    };
 
     return (
         <button onClick={handleClick} className="control-btn rounded-3xl border-2 border-white px-4 py-1">

@@ -16,8 +16,7 @@ export function useSpotifySearch(query: string) {
    const [data, setData] = useState<SpotifySearchResponse | null>(null);
    const [loading, setLoading] = useState(false);
    const [error, setError] = useState<string | null>(null);
-   const errorMessage =
-      'An unexpected error happened while searching for items. Please try again later';
+   const errorMessage = 'An unexpected error happened while searching for items. Please try again later';
 
    useEffect(() => {
       if (!query) {

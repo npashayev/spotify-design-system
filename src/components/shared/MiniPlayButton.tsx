@@ -1,6 +1,6 @@
 'use client';
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import playing from '@/assets/playing-music.gif';
 import Image from 'next/image';
 import { SpotifyTrack } from '@/types/tracks';
@@ -19,7 +19,7 @@ export default function MiniPlayButton({ index, track }: Props) {
             playingSongId: track.id,
             artistIds: track.artists.map(artist => artist.id),
         });
-    }
+    };
 
     const isPlaying = playingSong?.playingSongId === track.id;
 
@@ -40,5 +40,5 @@ export default function MiniPlayButton({ index, track }: Props) {
                     </>
                 )}
         </div>
-    )
+    );
 }

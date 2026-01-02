@@ -1,7 +1,7 @@
 import { msToTime } from '@/lib/utils/msToTime';
 import { SpotifyTrack } from '@/types/tracks';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 import MiniPlayButton from './MiniPlayButton';
 
 interface Props {

@@ -1,5 +1,5 @@
 import { use } from "react";
-import SearchResultsClient from "./components/SearchResult";
+import SearchResultsClient from "./components/SearchResultsClient";
 
 interface Props {
     params: Promise<{

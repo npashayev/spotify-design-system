@@ -36,5 +36,5 @@ export default async function ArtistPage({ params }: Props) {
                 <ArtistTopTracks artistId={artistId} />
             </ThemeGradientContainer>
         </>
-    )
+    );
 }
