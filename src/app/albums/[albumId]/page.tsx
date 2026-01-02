@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { faClockFour } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getImageColor } from '@/lib/utils/getImageColor';
-import { rgbStringToRgba } from '@/lib/utils/rgbStringToRgba';
 import Track from '@/components/shared/Track';
 import AlbumPageHeader from "./components/AlbumPageHeader";
 import MainPlayButton from "@/components/shared/buttons/MainPlayButton";
@@ -20,6 +19,7 @@ interface Props {
 
 export default async function AlbumPage({ params }: Props) {
     const { albumId } = await params;
+
     let album;
     try {
         album = await getAlbum(albumId);
@@ -33,7 +33,8 @@ export default async function AlbumPage({ params }: Props) {
         throw new Error("Unknown error occurred while fetching album");
     }
 
-    const image = album.images[0]
+    const image = album.images[0];
+
     const vibrant = await getImageColor(image.url);
 
     return (
@@ -71,5 +72,5 @@ export default async function AlbumPage({ params }: Props) {
                 </div>
             </ThemeGradientContainer>
         </main >
-    )
+    );
 }

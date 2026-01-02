@@ -36,7 +36,7 @@ export default function AlbumPageHeader({ album, vibrant, image }: Props) {
                     className="object-cover"
                 />
             </div>
-            <div className="text-white flex flex-col gap-1">
+            <div className="text-white w-full flex flex-col gap-1 max-[480px]:items-start">
                 <p>{type}</p>
                 <h1 className="text-[clamp(18px,5vw,60px)] leading-[1.2] font-bold">{album.name}</h1>
                 <p className='leading-[1.2] mt-1'>
