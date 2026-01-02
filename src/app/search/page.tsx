@@ -5,5 +5,5 @@ export default function SearchPage() {
                 Type to search for any song, artist or album you want
             </h1>
         </main>
-    )
+    );
 }
