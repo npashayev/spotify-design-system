@@ -4,13 +4,11 @@ import { getNewReleases } from '@/lib/api/albums/getNewReleases';
 import AlbumCard from '@/components/shared/cards/AlbumCard';
 
 export default function NewReleasesPage() {
-   const {
-      albums: { items },
-   } = use(getNewReleases());
+   const { albums: { items } } = use(getNewReleases());
 
    return (
       <div>
-         <h1 className="text-3xl mb-6 mt-12 font-bold max-md:text-2xl">New Releases</h1>
+         <h1 className="text-3xl mb-6 mt-12 font-bold max-md:text-2xl max-sm:text-[16px]">New Releases</h1>
          <Grid>
             {items.map((album) => {
                const artists = album.artists.map((artist) => artist.name);

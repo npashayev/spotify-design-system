@@ -6,7 +6,7 @@ interface Props {
 
 export default function ErrorBox({ children }: Props) {
     return (
-        <div className="p-6 bg-red-50 border m-6 border-red-200 rounded-lg">
+        <div className="p-6 bg-red-50 border m-6 max-sm:mx-2 border-red-200 rounded-lg">
             <div className="flex items-center gap-3">
                 <svg
                     className="w-5 h-5 text-red-600 shrink-0"
