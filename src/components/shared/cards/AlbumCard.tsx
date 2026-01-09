@@ -18,7 +18,7 @@ export default function AlbumCard({ album, children, className }: Props) {
          href={`/albums/${album.id}`}
          key={album.id}
          className={clsx(
-            'group relative w-54 hover:scale-102 transition:scale p-2 rounded-md duration-100',
+            'group relative w-50 max-[480px]:w-40 hover:scale-102 transition:scale p-2 rounded-md duration-100',
             className
          )}
       >
